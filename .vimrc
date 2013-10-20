@@ -11,11 +11,6 @@ set fileencoding=utf-8
 " Set up line numbering
 set number
 
-" Show line, column number, and relative position within a file in the status line
-" au WinLeave * set nocursorline nocursorcolumn
-" au WinEnter * set cursorline cursorcolumn
-" set cursorline cursorcolumn 
-
 " Indentation
 set tabstop=4
 set shiftwidth=4
@@ -38,13 +33,6 @@ set omnifunc=syntaxcomplete#Complete
 " JSHint
 inoremap <C-h> <c-o>:JSHint<CR>
 nnoremap <C-h> :<C-u>JSHint<CR>
-
-" Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
-
-" Invisible character colors
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
 
 " Easy expansion of the active file directory (tip 41, Practical Vim)
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
