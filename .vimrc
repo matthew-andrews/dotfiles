@@ -14,6 +14,7 @@ set number
 " Indentation
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 " Vundle
@@ -25,6 +26,7 @@ call vundle#rc()
 
 " let Vundle manage Vundle (required!)
 Bundle 'gmarik/vundle'
+Bundle 'derekwyatt/vim-scala'
 
 " Omnifunc
 filetype plugin on
